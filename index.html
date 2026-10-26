@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @theme {
+    --color-light-red: hsl(0 100% 67%);
+    --color-orangey-yellow: hsl(39 100% 56%);
+    --color-green-teal: hsl(166 100% 37%);
+    --color-cobalt-blue: hsl(234 85% 45%);
+    --color-light-slate-blue: hsl(252 100% 67%);
+    --color-light-royal-blue: hsl(241 81% 54%);
+    --color-violet-blue: hsl(256 72% 46%);
+    --color-persian-blue: hsl(241 72% 46%);
+    --color-pale-blue: hsl(221 100% 96%);
+    --color-light-lavender: hsl(241 100% 89%);
+    --color-dark-gray-blue: hsl(224 30% 27%);
+  }
+</style>
+  <style type="text/tailwindcss">
+  @font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @theme {
+    --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  }
+</style>    
+
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+
+<main class="bg-red-300 md:flex md:min-h-screen md:justify-center md:items-center md:p-5">
+    <section class="md:w-80 md:h-100  md:p-8 md:flex md:justify-center md:items-center md:flex-col bg-[hsl(248,91%,60%)] md:text-[hsl(0,0%,100%)] md:rounded-l-4xl relative z-10">
+        <p class="md:mb-7 md:text-lg md:font-bold md:text-[rgba(255,255,255,0.7)]">Your Result</p>
+
+        <div class="md:w-40 md:h-40 md:py-5 md:rounded-full md:bg-light-royal-blue md:flex md:justify-center md:items-center md:flex-col md:bg-[image:linear-gradient(hsl(255,71%,46%),rgba(76,34,201,0))]">
+            <h1 class="md:font-extrabold md:text-6xl md:text-white">76</h1>
+            <p class="text-[rgba(255,255,255,0.5)]">of 100</p>
+        </div>
+        
+        <p class="md:font-bold  md:text-white md:text-2xl md:py-2 md:mt-5">Great</p>
+
+        <p class="md:max-w-md md:text-[rgba(255,255,255,0.7)]">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <section class="md:w-80 md:h-100 md:flex md:flex-col md:justify-center md:items-center md:bg-white md:rounded-r-4xl md:rounded-l-lg">
+      <h2 class="md:self-start md:mx-8 md:relative md:-top-6 md:text-lg md:font-bold md:text-[hsl(224,30%,27%)]">Summary</h2>
+
+      <div class="md:w-65 md:p-2 md:mb-2 md:flex md:justify-between md:items-center md:text-md md:bg-[rgba(255,87,87,0.1)] md:rounded-md md:-ml-8 md:pl-8 md:rounded-r-4xl md:rounded-l-none">
+          <div class="md:flex md:gap-2">
+            <img src="./assets/images/icon-reaction.svg">
+            <p class="text-light-red">Reaction</p>
+          </div>
+
+          <div class="md:flex md:gap-2 ">
+            <p class="md:text-base md:text-[hsl(224,30%,27%)]">80</p>
+            <p class="md:text-[rgba(48,59,90,0.5)] md:text-base">/ 100</p>
+          </div>
+      </div>
+
+      <div class="md:my-2 md:flex md:w-65 md:p-2 md:justify-between md:items-center md:text-md md:bg-[#ffb01f1a] md:rounded-md">
+          <div class="md:flex md:gap-2">
+            <img src="./assets/images/icon-memory.svg">
+            <p class="text-orangey-yellow">Memory</p>
+          </div>
+
+          <div class="md:flex md:gap-2">
+            <p class="md:text-base md:text-[hsl(224,30%,27%)]">92 </p>
+            <p class="md:text-[rgba(48,59,90,0.5)] md:text-base">/ 100</p>
+          </div>
+      </div>
+
+      <div class="md:my-2 md:flex md:w-65 md:p-2 md:justify-between md:items-center md:text-md md:bg-[rgba(17,37,212,0.1)] md:rounded-md">
+          <div class="md:flex md:gap-2">
+            <img src="./assets/images/icon-verbal.svg">
+            <p class="text-green-teal">Verbal</p>
+          </div>
+
+          <div class="md:flex md:gap-2">
+            <p class="md:text-base md:text-[hsl(224,30%,27%)]">61 </p>
+            <p class="md:text-[rgba(48,59,90,0.5)] md:text-base">/ 100</p>
+          </div>
+      </div>
+
+      <div class="md:my-2 md:flex  md:w-65 md:p-2 md:justify-between md:items-center md:text-md md:bg-[rgba(17,37,212,0.1)] md:rounded-md">
+          <div class="md:flex md:gap-2">
+            <img src="./assets/images/icon-visual.svg">
+            <p class="text-cobalt-blue">Visual</p>
+          </div>
+
+          <div class="md:flex md:gap-2">
+            <p class="md:text-base md:text-[hsl(224,30%,27%)]">73</p>
+            <p class="md:text-[rgba(48,59,90,0.5)] md:text-base">/ 100</p>
+          </div>
+      </div>
+      <div class="md:">
+             <button class="relative top-5 px-24.5 py-2 items-center justify-center text-lg text-white rounded-full bg-dark-gray-blue">Continue</button>
+      </div>
+    </section>
+
+   
+</main>
+  
+  
+</body>
+</html>
